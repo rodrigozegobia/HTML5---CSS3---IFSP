@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1 style="padding: 20px; margin: 20px;">Formularios</h1>
+    <form action="https://bri.ifsp.edu.br" method="GET">
+        <fieldset>
+            <legend>Cadastro Usuário</legend>
+            <fieldset>
+                <legend>Dados Básicos</legend>
+                <div>
+                    <label for="codigo">Codigo:</label>
+                    <input type="text" name="cod" id="codigo" value="131321" readonly>
+                </div>
+                <label for="nome">Nome:</label>
+                <input type="text" size="10" name="nome" id="nome" placeholder="Digite o nome" required><br>
+                <label for="senha">Senha</label>
+                <input type="password" name="pass" id="senha" placeholder="Digite a Senha">
+            </fieldset>
+            <div>
+                <label for="hobbie">Escolha seu hobbie</label>
+                <input type="checkbox" checked name="futebol" id="futebol">Futebol
+                <input type="checkbox" name="futebol" id="tenis">Tenis
+            </div>
+            <div>
+                <label for="">Escolha seu sexo</label>
+                <input type="radio" name="sexo" id="Masculino">Masculino
+                <input type="radio" name="sexo" id="Feminino">Feminino
+                <input type="radio" name="sexo" id="naopreencher">Prefiro não preencher
+            </div>
+            <div>
+                <label for="avatar">Choose a profile picture:</label>
+                <input type="file" id="avatar" name="avatar" accept=".doc">
+                <input type="hidden" name="escondido">
+            </div>
+            <div>
+                <label for="">Deixe seu recado</label><br>
+                <textarea name="" id="" cols="50" rows="5">
+
+        </textarea>
+            </div>
+            <div>
+                <label for="">Esoolha o estado</label>
+                <select name="" id="">
+                    <option value="sp">SP</option>
+                    <option value="sc">SC</option>
+                    <option value="pr">PR</option>
+                </select>
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Apagar</button>
+
+    </form>
+    <iframe src="https://www.suamusica.com.br/playlist/embed/r294146/vertical/0/dark" width="352" height="378" frameborder="0" allowfullscreen="0"></iframe>
+</body>
+
+</html>

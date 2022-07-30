@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1 id="titulo" class="center">Receitas do Rodrigo</h1>
+        </header>
+
+        <main>
+
+            <nav>
+                <ul id="menu" class="center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes/Receitas.html">Receitas</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="contato">
+                <div>
+                    <br>
+                    <h2 class="center">Contate-nos</h2>
+                    <br>
+                    <form action="" method="">
+                        <fieldset>
+                                <div>
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input type="email" size="30" name="email" id="email" placeholder="Digite o e-mail" required>
+                                </div>
+                                <div>
+                                    <label for="telefone">Telefone:</label>
+                                    <input type="tel" id="telefone" name="telefone" size="9" required placeholder="(xx) xxxxx-xxxx">
+                                </div>
+                                <div>
+                                    <label for="assunto">Assunto:</label>
+                                    <select name="opcoes" id="opcoes" required>
+                                        <option value="" selected disabled hidden>Selecione --</option>
+                                        <option value="Sugestão">Sugestão</option>
+                                        <option value="Comercial">Comercial</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
+                                <textarea name="mensagem" id="mensagem" cols="80" rows="10" required></textarea>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <label for="newsletter">Desejo receber novas receitas por email</label>
+                                </div>
+                                    <button type="submit">Enviar</button>
+                                    <button type="reset">Apagar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Feito por Rodrigo Zegóbia</p>
+        </footer>
+
+    </div>
+</body>
+</html>
